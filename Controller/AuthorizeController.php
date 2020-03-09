@@ -9,8 +9,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class AuthorizeController extends Controller
 {
     /**
-     * @Route("/authorize", name="_authorize_validate")
-     * @Method({"GET"})
+     * @Route("/authorize", name="_authorize_validate", methods={"GET","HEAD"})
      * @Template("OAuth2ServerBundle:Authorize:authorize.html.twig")
      */
     public function validateAuthorizeAction()
@@ -37,8 +36,7 @@ class AuthorizeController extends Controller
     }
 
     /**
-     * @Route("/authorize", name="_authorize_handle")
-     * @Method({"POST"})
+     * @Route("/authorize", name="_authorize_handle", methods={"POST"})
      */
     public function handleAuthorizeAction()
     {
