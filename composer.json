@@ -1,5 +1,5 @@
 {
-    "name": "bshaffer/oauth2-server-bundle",
+    "name": "schultenmedia/oauth2-server-bundle",
     "type": "symfony-bundle",
     "description": "Symfony OAuth2ServerBundle",
     "keywords": ["oauth", "oauth2", "security"],
@@ -13,12 +13,12 @@
     ],
     "minimum-stability":"dev",
     "require": {
-        "php": ">=5.3",
+        "php": ">=7.3",
         "bshaffer/oauth2-server-php": ">=1.0",
         "bshaffer/oauth2-server-httpfoundation-bridge": "^1.2"
     },
     "require-dev": {
-        "symfony/symfony": "^2.8|^3",
+        "symfony/symfony": "^4.4",
         "doctrine/orm": "~2.4,>=2.4.5"
     },
     "autoload": {
