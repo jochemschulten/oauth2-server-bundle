@@ -4,13 +4,11 @@ namespace OAuth2\ServerBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Routing\Annotation\Route;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
 class AuthorizeController extends Controller
 {
     /**
      * @Route("/authorize", name="_authorize_validate", methods={"GET","HEAD"})
-     * @Template("OAuth2ServerBundle:Authorize:authorize.html.twig")
      */
     public function validateAuthorizeAction()
     {
